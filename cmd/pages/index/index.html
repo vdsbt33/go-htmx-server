@@ -1,0 +1,14 @@
+{{define "Content"}}
+<p class="text-2xl">
+	Welcome to <span class="font-bold">{{ .Title }}</span>
+</p>
+
+<div class="pt-6">
+	<button class="bg-blue-400 rounded px-3 py-1" hx-trigger="click once" hx-get="/index/partial" hx-target="#partial">
+		Show Partial
+	</button>
+
+	<div id="partial" class="mt-4">
+	</div>
+</div>
+{{end}}
