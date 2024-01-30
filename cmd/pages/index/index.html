@@ -4,8 +4,9 @@
 </p>
 
 <div class="pt-6">
-	<button class="bg-blue-400 rounded px-3 py-1" hx-trigger="click once" hx-get="/index/partial" hx-target="#partial">
+	<button class="bg-blue-400 rounded px-3 py-1" hx-trigger="click once" hx-get="/index/partial" hx-target="#partial" hx-indicator="#spinner">
 		Show Partial
+		<i id="spinner"></i>
 	</button>
 
 	<div id="partial" class="mt-4">
